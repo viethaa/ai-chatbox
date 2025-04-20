@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/joy": "^5.0.0-beta.52",
     "@mui/material": "^7.0.1",
+    "@next/font": "^14.2.15",
     "lucide-react": "^0.484.0",
     "next": "15.2.1",
     "react": "^19.0.0",

@@ -6,6 +6,7 @@ import StoriesCard from '../stories_card/stories_card';
 import ChatInput from '../chat_input/chat-input';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/joy/Box';
+import StoryPage from "../story_page/story_page";
 import { Link } from "react-router";
 
 const stories = [
@@ -49,27 +50,28 @@ const stories = [
 
 export default function ChatBox() {
     return (
-        <div className="flex flex-col h-screen">
-            <div className="h-[100px]">
-                <Topbar />
-            </div>
-            <div className="flex flex-1">
-                <Sidebar className="flex-1" />
-                <Grid container spacing={4} justifyContent="center" className="flex-5 px-4 py-4">
-                    {stories.map((data, index) => (
-                        <Grid item xs={12} sm={6} md={4} key={index}>
-                            <Box className="box-card">
-                                <StoriesCard
-                                    className="news-card-content"
-                                    imageLink={data.imageURL}
-                                    title={data.title}
-                                    description={data.description}
-                                />
-                            </Box>
-                        </Grid>
-                    ))}
-                </Grid>
-            </div>
-        </div>
+        // <div className="flex flex-col h-screen">
+        //     <div className="h-[70px]">
+        //         <Topbar />
+        //     </div>
+        //     <div className="flex flex-1 h-[500px]">
+        //         <Sidebar className="flex-1" />
+        //         <Grid container spacing={4} justifyContent="center" className="flex-5 px-4 py-6 overflow-y-auto">
+        //             {stories.map((data, index) => (
+        //                 <Grid item xs={12} sm={6} md={4} key={index}>
+        //                     <Box className="box-card">
+        //                         <StoriesCard
+        //                             className="news-card-content"
+        //                             imageLink={data.imageURL}
+        //                             title={data.title}
+        //                             description={data.description}
+        //                         />
+        //                     </Box>
+        //                 </Grid>
+        //             ))}
+        //         </Grid>
+        //     </div>
+        // </div>
+        <StoryPage />
     );
 }

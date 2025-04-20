@@ -9,7 +9,12 @@ export default function Topbar() {
                     <div className="flex-9 flex items-center justify-between h-16">
                         <div className="flex shrink-0 items-center gap-3">
                             <img className="h-11 w-auto" src="assets/logo.webp" alt="Your Company" />
-                            <span className="text-white font-semibold text-[21px]" style={{ fontFamily: "'Fira Sans', sans-serif" }}>Bobble</span>
+                            <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#383b71] via-[#a3a6d6] to-white font-semibold text-[21px] tracking-wider" style={{ fontFamily: "'Fira Sans', sans-serif" }}>Loremi</span>
+                            <span
+                                className="inline-flex items-center rounded-md bg-[#2b2d31] bg-opacity-70 px-2.5 py-0.5 text-xs font-medium text-white ring-1 ring-inset ring-white/20 tracking-wide"
+                            >
+                                v1.0.0
+                            </span>
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
